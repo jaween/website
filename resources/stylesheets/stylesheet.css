@@ -1,0 +1,92 @@
+/* Resets CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1;
+}
+
+header {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+img {
+  width: 330px;
+  height: 200px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.thumbnail video {
+  width: 100%;
+  height: auto;
+	border-radius: 5px;
+}
+
+.columns {
+  -webkit-columns: 300px 3;
+  -moz-columns: 300px 3;
+  columns: 300px 3;
+}
+
+.thumbnail {
+  position: relative;
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.thumbnail img {
+  border-radius: 5px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.thumbnail .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: url("../images/scrim.png");
+
+  border-radius: 0px 0px 5px 5px;
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+
+.thumbnail-text {
+  position: absolute;
+  bottom: 0;
+  padding: 16px;
+  font-size: x-large;
+  font-family: "Helvetica";
+  color: white;
+}

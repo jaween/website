@@ -2,177 +2,117 @@
 <head>
   <title>Jaween</title>
   <link rel="stylesheet" type="text/css" href="resources/stylesheets/stylesheet.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 <body>
-<div class="navigation">
-  <span class="header">Jaween</span>
-  <div class="menu">
-    <hr>
-    <ul>
-      <li>What is this?</li>
-      <li>Software</li>
-      <li>Drawing</li>
-      <li>Contact</li>
-    </ul>
-  </div>
+<div ng-app="">
+<div ng-include="'./navigation.html'"></div>
+<div class="content">
+  <a href="./rhythm_heaven_vr.html">
+    <div class="thumbnail">
+      <img src="resources/images/rhythm_heaven_vr_thumb.png" alt=""/>
+      <div class="thumbnail-overlay">
+        <span class="thumbnail-text">Rhythm Heaven VR</span>
+      </div>
+    </div>
+  </a>
+  <a href="rts.html">
+    <div class="thumbnail">
+      <img src="resources/images/raise_the_sun_thumb.png" alt=""/>
+      <div class="thumbnail-overlay">
+        <span class="thumbnail-text">Raise The Sun</span>
+      </div>
+    </div>
+  </a>
+  <a href="sdl_on_mojo.html">
+    <div class="thumbnail">
+      <img src="resources/images/sdl_on_mojo_thumb.png" alt=""/>
+      <div class="thumbnail-overlay">
+        <span class="thumbnail-text">SDL on Mojo</span>
+      </div>
+    </div>
+  </a>
+  <a href="scene_reconstruction.html">
+    <div class="thumbnail">
+      <img src="resources/images/scene_reconstruction_thumb.png" alt=""/>
+      <div class="thumbnail-overlay">
+        <span class="thumbnail-text">Scene Reconstruction</span>
+      </div>
+    </div>
+  </a>
+  <a href="pixel_art.html">
+    <div class="thumbnail">
+      <img src="resources/images/pixel_art_thumb.png" alt=""/>
+      <div class="thumbnail-overlay">
+        <span class="thumbnail-text">Pixel Art</span>
+      </div>
+    </div>
+  </a>
+  <a href="rhythm_heaven_android.html">
+    <div class="thumbnail">
+      <img src="resources/images/pixel_art_thumb.png" alt=""/>
+      <div class="thumbnail-overlay">
+        <span class="thumbnail-text">Rhythm Heaven Android</span>
+      </div>
+    </div>
+  </a>
+  <a href="graphical.html">
+    <div class="thumbnail">
+      <img src="resources/images/graphical_thumb.png" alt=""/>
+      <div class="thumbnail-overlay">
+        <span class="thumbnail-text">Graphical</span>
+      </div>
+    </div>
+  </a>
+  <a href="math_n_splat.html">
+    <div class="thumbnail">
+      <img src="resources/images/math_n_splat_thumb.png" alt=""/>
+      <div class="thumbnail-overlay">
+        <span class="thumbnail-text">Math 'n Splat</span>
+      </div>
+    </div>
+  </a>
+  <!--<a href="https://www.reddit.com/r/battlenetwork">
+    <div class="thumbnail">
+      <video muted loop onmouseout="video.pause()" onmouseover="video.play()">
+        <source src="http://video.webmfiles.org/big-buck-bunny_trailer.webm">
+      </video>
+      <span class="thumbnail-text">Arithmetic Fun Disruption</span>
+    </div>
+  </a>-->
+  <a href="quack_n_splat.html">
+    <div class="thumbnail">
+      <img src="resources/images/quack_n_splat_thumb.png" alt=""/>
+      <div class="thumbnail-overlay">
+        <span class="thumbnail-text">Quack 'n Splat</span>
+      </div>
+    </div>
+  </a>
+  <a href="future_star_32.html">
+    <div class="thumbnail">
+      <img src="resources/images/future_star_32_thumb.png" alt=""/>
+      <div class="thumbnail-overlay">
+        <span class="thumbnail-text">Future Star 32</span>
+      </div>
+    </div>
+  </a>
+  <a href="the_adventures_of_bob.html">
+    <div class="thumbnail">
+      <img src="resources/images/the_adventures_of_bob_thumb.png" alt=""/>
+      <div class="thumbnail-overlay">
+        <span class="thumbnail-text">The Adventures of Bob</span>
+      </div>
+    </div>
+  </a>
+  <a href="concepts_and_experiments.html">
+    <div class="thumbnail">
+      <img src="resources/images/banner.jpg" alt=""/>
+      <div class="thumbnail-overlay">
+        <span class="thumbnail-text">Concepts and Experiments</span>
+      </div>
+    </div>
+  </a>
 </div>
-<div clsss="content">
-  <div class="columns">
-    <ul>
-      <li>
-        <a href="https://www.reddit.com/r/battlenetwork">
-          <div class="thumbnail">
-            <img src="resources/images/rhythmvr.png" alt=""/>
-            <div class="overlay">
-              <span class="thumbnail-text">Rhythm Heaven VR</span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.reddit.com/r/battlenetwork">
-          <div class="thumbnail">
-            <img src="resources/images/rts_tree_thumb.png" alt=""/>
-            <div class="overlay">
-              <span class="thumbnail-text">Raise The Sun</span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.reddit.com/r/battlenetwork">
-          <div class="thumbnail">
-            <img src="resources/images/pixelart.png" alt=""/>
-            <div class="overlay">
-              <span class="thumbnail-text">Pixel Art</span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.reddit.com/r/battlenetwork">
-          <div class="thumbnail">
-            <img src="resources/images/graphical.png" alt=""/>
-            <div class="overlay">
-              <span class="thumbnail-text">Graphical</span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.reddit.com/r/battlenetwork">
-          <div class="thumbnail">
-            <video muted loop onmouseout="video.pause()" onmouseover="video.play()">
-              <source src="http://video.webmfiles.org/big-buck-bunny_trailer.webm">
-            </video>
-            <div class="overlay">
-                <span class="thumbnail-text">Megaman Battle Network 4</span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.reddit.com/r/battlenetwork">
-          <div class="thumbnail">
-            <img src="resources/images/banner.jpg" alt=""/>
-            <div class="overlay">
-              <span class="thumbnail-text">Megaman Battle Network 6</span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.reddit.com/r/battlenetwork">
-          <div class="thumbnail">
-            <img src="resources/images/banner.jpg" alt=""/>
-            <div class="overlay">
-              <span class="thumbnail-text">Megaman Battle Network 6</span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.reddit.com/r/battlenetwork">
-          <div class="thumbnail">
-            <img src="resources/images/banner.jpg" alt=""/>
-            <div class="overlay">
-              <span class="thumbnail-text">Megaman Battle Network 6</span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.reddit.com/r/battlenetwork">
-          <div class="thumbnail">
-            <img src="resources/images/banner.jpg" alt=""/>
-            <div class="overlay">
-              <span class="thumbnail-text">Megaman Battle Network 6</span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.reddit.com/r/battlenetwork">
-          <div class="thumbnail">
-            <img src="resources/images/banner.jpg" alt=""/>
-            <div class="overlay">
-              <span class="thumbnail-text">Megaman Battle Network 6</span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.reddit.com/r/battlenetwork">
-          <div class="thumbnail">
-            <img src="resources/images/banner.jpg" alt=""/>
-            <div class="overlay">
-              <span class="thumbnail-text">Megaman Battle Network 6</span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.reddit.com/r/battlenetwork">
-          <div class="thumbnail">
-            <img src="resources/images/banner.jpg" alt=""/>
-            <div class="overlay">
-              <span class="thumbnail-text">Megaman Battle Network 6</span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.reddit.com/r/battlenetwork">
-          <div class="thumbnail">
-            <img src="resources/images/banner.jpg" alt=""/>
-            <div class="overlay">
-              <span class="thumbnail-text">Megaman Battle Network 6</span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.reddit.com/r/battlenetwork">
-          <div class="thumbnail">
-            <img src="resources/images/banner.jpg" alt=""/>
-            <div class="overlay">
-              <span class="thumbnail-text">Megaman Battle Network 6</span>
-            </div>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.reddit.com/r/battlenetwork">
-          <div class="thumbnail">
-            <img src="resources/images/banner.jpg" alt=""/>
-            <div class="overlay">
-              <span class="thumbnail-text">Megaman Battle Network 6</span>
-            </div>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </div>
 </div>
 </body>
 </html>

@@ -24,6 +24,7 @@ body {
 	display: flex;
 	width: 100%;
 	font-family: "Helvetica";
+	background: #EEEEEE;
 }
 
 p {
@@ -50,8 +51,9 @@ a:hover {
 	background-color: #111111;
 }
 
-.navigation li {
-	margin-top: 40px;
+li {
+	margin-left: 35;
+	padding-left: 10;
 }
 
 .header {
@@ -80,6 +82,61 @@ a:hover {
 	position: relative;
 	flex-grow: 1;
 	margin-left: 320px;
+	color: #111111;
+}
+
+.project-body {
+	position: relative;
+	flex-grow: 1;
+	width: 40em;
+	padding: 40px;
+}
+
+.project-media-main {
+	padding-top: 20px;
+}
+
+.project-media-main img {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.project-media-main iframe {
+	display: block;
+	width: 100%;
+	height: 480px;
+	object-fit: cover;
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.project-media-thumbs {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.project-media-thumbs img {
+	display: inline;
+	width: 20%;
+	height: auto;
+	object-fit: contain;
+	margin-right: 6px;
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.project-title {
+	font-size: xx-large;
+}
+
+.project-description {
+	font-size: large;
+	line-height: 1.5em;
+	padding-top: 10px;
 }
 
 table {
@@ -103,10 +160,10 @@ td img {
   position: relative;
   display: inline-block;
 	margin: 40px;
-	width: 425px;
-	height: 275px;
-	box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
+	width: 424px;
+	height: 265px;
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
 	overflow: hidden;
 	margin-bottom: 20px;
 }

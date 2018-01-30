@@ -32,7 +32,7 @@ p {
 }
 
 a {
-  color: white;
+  color: black;
 	text-decoration: none;
 }
 
@@ -49,6 +49,14 @@ a:hover {
 	width: 240px;
 	color: white;
 	background-color: #111111;
+}
+
+.navigation a {
+  color: white;
+}
+
+.navigation a:hover {
+  color: goldenrod;
 }
 
 li {
@@ -94,6 +102,7 @@ li {
 
 .project-media-main {
 	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .project-media-main img {

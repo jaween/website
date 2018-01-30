@@ -1,57 +1,62 @@
 <html>
 <head>
-  <title>Rhythm Heaven VR</title>
+  <title>Jaween</title>
   <link rel="stylesheet" type="text/css" href="resources/stylesheets/stylesheet.css">
 </head>
-<body ng-app="">
-<div class="content">
-  <div class="navigation">
-    <span class="header"><a href="./index.html">Jaween<br/><h6>Ediriweera</h6></a></span>
-    <br/><hr/><br/>
-    <p>This is an exhibit of some software that I have built since I was a kid.</p>
-    <div class="footer">
-      <table>
-        <tr>
-          <td><img src="resources\images\email_icon.png"></td>
-          <td><a href="mailto:jaween.ediriweera@gmail.com?Subject=Hello">jaween.ediriweera@gmail.com</a></td>
-        </tr>
-        <tr>
-          <td><img src="resources\images\github_icon.png"></td>
-          <td><a href="https://github.com/jaween">github.com/jaween</a></td>
-        </tr>
-        <tr>
-          <td><img src="resources\images\resume_icon.png"></td>
-          <td><a href="resources/files/resume.pdf">Resume</a></td>
-        </tr>
-      </table>
-      <span class="updated">Last update was in January 2017</span>
-    </div>
+<body>
+<div class="navigation">
+  <span class="header"><a href="./index.html">Jaween<br/><h6>Ediriweera</h6></a></span>
+  <br/><hr/><br/>
+  <p>I'm an Australian Software Developer with an interest in computer graphics.</p><br/><br/>
+  <p>This is an exhibit of some projects that I've worked on.</p>
+  <div class="footer">
+    <table>
+      <tr>
+        <td><img src="resources/images/icons/email.png"></td>
+        <td><a href="mailto:jaween.ediriweera@gmail.com?Subject=Hello">jaween.ediriweera@gmail.com</a></td>
+      </tr>
+      <tr>
+        <td><img src="resources/images/icons/github.png"></td>
+        <td><a href="https://github.com/jaween">github.com/jaween</a></td>
+      </tr>
+      <tr>
+        <td><img src="resources/images/icons/twitter.png"></td>
+        <td><a href="https://twitter.com/jaweene">twitter.com/jaweene</a></td>
+      </tr>
+      <tr>
+        <td><img src="resources/images/icons/instagram.png"></td>
+        <td><a href="https://instagram.com/jaween_">instagram.com/jaween_</a></td>
+      </tr>
+      <tr>
+        <td><img src="resources/images/icons/resume.png"></td>
+        <td><a href="resources/files/resume.pdf">Resume</a></td>
+      </tr>
+    </table>
+    <span class="updated">Last update was in January 2018</span>
   </div>
+</div>
+
+<div class="content">
   <div class="project-body">
     <span class="project-title">Rhythm Heaven VR</span>
     <div class="project-media-main">
       <iframe src="http://www.youtube.com/embed/eBemO0HF3GY?autoplay=0">
       </iframe>
     </div>
-    <div class="project-media-thumbs">
-      <img src="resources/images/rhythm_heaven_vr_thumb.png" />
-      <img src="resources/images/rhythm_heaven_vr_thumb.png" />
-      <img src="resources/images/rhythm_heaven_vr_thumb.png" />
-      <img src="resources/images/rhythm_heaven_vr_thumb.png" />
-    </div>
-    <div class="project-description">
-      Rhythm Heaven VR is a remake of the Night Walk minigame from the Nintendo Wii game Rhythm Heaven Fever. The project was done with the purpose of learning how to develop for Virtual Reality and also as a general experiment in VR input. The game is controlled by nodding to the beat of the music. Rhythm Heaven VR was developed over the course of a week, so please forgive any bugs you might encounter.
-      <br/><br/>
-      Moving from a two-button input method used in the original title to a buttonless gaze based input method required key changes to the interaction. In the original title, the player presses the A button on each beat to make the character hop. In addition to this there is a special offbeat that requires holding both the A and B buttons simultaneously and releasing them after a short pause, launching the character into the air. Having the user nod on each beat is a straight forward decision. The
-      The approach taken was to have the user tilt their head downwards
-      <br/><br/>
-      Some lessons learned:
-      <ul>
-        <li>Very slight nods must be detected</li>
-        <li>Nodding too vigorously can cause dizziness</li>
-        <li>The character must walk in a circle around the player at a speed that doesn’t cause dizziness</li>
-      </ul>
-    </div>
+  <div class="project-description">
+2016 February
+<br/><br/>
+Rhythm Heaven VR is a remake of the Night Walk minigame from the Nintendo Wii game Rhythm Heaven Fever. The game was created in order to learn about Virtual Reality development and also as a fun VR input experiment. The game is controlled by nodding to the beat of the music. Rhythm Heaven VR was developed rapidly over the course of a week, so there are many bugs.
+<br/><br/>
+The original title used a two-button input method, whereas this version uses a buttonless gaze based interaction, leading to some interesting development challenges. In the original title, there are two types of player interactions. The first is pressing the A-button on each beat to make the character skip in time with the music. The second is a special offbeat that requires holding both the A-button and B-button simultaneously, then releasing them after a short pause, launching the character into the air. The A-button was mapped to a slight nod from the user. The A+B Button offbeat interaction was mapped to a deep nod down and then a steep nod up. 
+<br/><br/>
+Detecting nods had to be very generous. Requiring a vigorous a nod would be uncomfortable. The in-game character also had to walk at a speed that didn’t cause dizziness to the player.
+<br/><br/>
+<a href="https://drive.google.com/open?id=0B87CfTWbu9czWTAxWjdmTEpRdnc">Download</a>
+<br/><br/>
+<a href="https://github.com/jaween/rhythm-vr">Source code</a>
   </div>
+</div>
+
 </body>
 </html>

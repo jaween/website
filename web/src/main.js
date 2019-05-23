@@ -7,17 +7,17 @@ Vue.config.productionTip = false
 let projects = [
   {
     name: 'You.Are.Transmission',
-    url: 'you-are-trasmission',
+    baseUrl: 'you_are_transmission',
     summary: 'Game made for Global Game Jam 2018',
   },
   {
     name: 'Pixel Brush',
-    url: 'pixel-brush',
+    baseUrl: 'pixel_brush',
     summary: '"Pixel art" digital artwork creation app',
   },
   {
     name: 'Graphical',
-    url: 'graphical',
+    baseUrl: 'graphical',
     summary: 'Graphing calculator app',
   },
 ];

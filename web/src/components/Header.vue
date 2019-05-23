@@ -1,7 +1,7 @@
 var Header = {
   <template>
     <div class="navigation">
-      <span class="header"><a href="./index.html">Jaween<br/><h6>Ediriweera</h6></a></span>
+      <h1 class="header"><a href="./index.html">Jaween</a></h1>
       <br/><hr/><br/>
       <p>Jaween Ediriweera's website</p>
       <p>I am a Software Developer from Australia.</p><br/><br/>

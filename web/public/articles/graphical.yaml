@@ -1,0 +1,10 @@
+date: 24-01-2018
+downloads:
+  - name: Release
+    version: 1.0
+    type: EXE
+  - name: Beta
+    version: 0.5
+    type: EXE
+article: |
+  Graphical **article**.

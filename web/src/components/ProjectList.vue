@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="project in projects" v-bind:key="project">
+    <div v-for="project in projects" v-bind:key="project.baseUrl">
       <router-link :to="{ path: project.route, params: project }">
         <div class="thumbnail">
           <img :src="project.thumbnail" alt=""/>

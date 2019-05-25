@@ -1,0 +1,13 @@
+date: 24-01-2018
+article: |
+  Developed in Unity over 48 hours as part of the 2018 Global Game Jam. 'Transmission' was the theme of the jam. You. Are. Transmission. is a First Person Action game in which the main mechanic is the ability to teleport, serving as a means of locomotion as well as the method to destroy enemies (by teleporting through them).
+
+  The game's AI system was developed by myself, using Unity's Navigation Mesh features to perform path finding, as well as a set of simple movement tactics (advance, flee, strafe and flee while strafing).
+
+  The game was developed by team 'Shak Attack':
+
+  * [Morgan Davies](https://captainmorgandavies.com/) (Level design)
+  * [Jaween Ediriweera](http://jaween.com) (Programming)
+  * [Sean Mansell](http://arknano.net/) (Design & Programming)
+  * [Shakur Muller](https://shakurmuller.artstation.com/) (Art & Houdini Genie)
+  * [Dan Palamountain](https://dannypalamountain.wixsite.com/dpalamountain) (Level design)

@@ -9,7 +9,7 @@ export default function(projects) {
   const pages = projects.map(project => {
     project.thumbnail = 'images/thumbnails/' + project.baseUrl + '.png';
     project.route = '/projects/' + project.baseUrl;
-    project.articleUrl = process.env.BASE_URL + 'articles/' + project.baseUrl + '.json';
+    project.articleUrl = process.env.BASE_URL + 'articles/' + project.baseUrl + '.yaml';
     return {
       path: project.route,
       name: 'projects/' + project.baseUrl,

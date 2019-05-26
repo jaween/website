@@ -1,10 +1,26 @@
 <template>
   <div>
     <h1>{{project.name}}</h1>
-    <vue-simple-markdown :highlight="true" v-if="article != null" :source="article"></vue-simple-markdown>
-    <p v-if="metadataError != null">{{metadataError}}</p>
+    <vue-simple-markdown
+      v-if="data.article != null"
+      :highlight="true"
+      :source="data.article"
+      class="col-lg-8 col-xl-7 text-justify" 
+    />
     <p v-if="error != null">{{error}}</p>
-    <div v-if="article == null && error == null" class="loader"/>
+    <div v-if="data.article == null && error == null" class="loader"/>
+    <div
+      v-if="data.links != null"
+      class="text-justify"
+    >
+      <p>Links:
+      <div
+        v-for="item in data.links"
+        v-bind:key="item.text"
+      >
+        <a :href="item.url">{{item.text}}</a>
+        </div>
+    </div>
   </div>
 </template>
 
@@ -12,7 +28,7 @@
 import Vue from 'vue'
 import VueSimpleMarkdown from 'vue-simple-markdown'
 import 'vue-simple-markdown/dist/vue-simple-markdown.css'
-import yaml from 'js-yaml'
+import jsYaml from 'js-yaml'
 
 Vue.use(VueSimpleMarkdown)
 
@@ -20,11 +36,7 @@ export default {
   props: ['project'],
   data: function() {
     return {
-      date: null,
-      downloads: null,
-      videos: null,
-      screenshots: null,
-      article: null,
+      data: null,
       error: null,
     }
   },
@@ -42,8 +54,8 @@ export default {
       }
 
       try {
-        let data = await response.text();
-        this.article = yaml.safeLoad(data).article;
+        let yaml = await response.text();
+        this.data = jsYaml.safeLoad(yaml);
       } catch (e) {
         this.error = "Failed to display content."
       }
@@ -65,10 +77,6 @@ export default {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
-}
-
-. {
-  color: #00CC00;
 }
 
 </style>

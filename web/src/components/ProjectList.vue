@@ -1,13 +1,17 @@
 <template>
   <div>
-    <div v-for="project in projects" v-bind:key="project.baseUrl">
+    <div
+      v-for="project in projects"
+      v-bind:key="project.baseUrl"
+    >
       <router-link :to="{ path: project.route, params: project }">
-        <div class="thumbnail">
-          <img :src="project.thumbnail" alt=""/>
-          <div class="thumbnail-overlay">
-            <span class="thumbnail-text">{{project.name}}</span>
-          </div>
-        </div>
+        <b-card
+          :title="project.name"
+          :sub-title="project.summary"
+          :img-src="project.thumbnail"
+          tag="article"
+          class="mb-4 h-100"
+        />
       </router-link>
     </div>
   </div>
@@ -20,43 +24,18 @@ export default {
 </script>
 
 <style>
-.thumbnail {
-  position: relative;
-  display: inline-block;
-	margin: 40px;
-	width: 424px;
-	height: 265px;
-	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
-  border-radius: 4px;
-	overflow: hidden;
-	margin-bottom: 20px;
+.card {
+  float: left;
+  min-width: 15rem;
+  max-width: 22rem;
+  min-height: 20rem;
+  max-height: 20rem;
+  width: 25rem;
 }
 
-.thumbnail img {
-  display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.thumbnail-overlay {
-	position: absolute;
-  bottom: 0;
-	width: 100%;
-	height: 75px;
-	background-color: grey;
-	background-position: bottom;
-	background-repeat: repeat-x;
-}
-
-.thumbnail-text {
-  position: absolute;
-  bottom: 0;
-	width: 100%;
-	padding-bottom: 10px;
-  font-size: x-large;
-  color: white;
-	text-align: center;
+.card-img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
 }
 </style>
-

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import ProjectList from '@/components/ProjectList'
 import ProjectPage from '@/components/ProjectPage'
+import NotFound from '@/components/NotFound'
 
 Vue.use(Router)
 
@@ -30,8 +31,12 @@ export default function(projects) {
         }
       },
       {
-        path: '*'
-        // TODO: 404 page
+        path: '/404',
+        component: NotFound,
+      },
+      {
+        path: '*',
+        redirect: '/404'
       }
     ].concat(pages)
   })

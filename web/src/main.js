@@ -14,12 +14,12 @@ let projects = [
   {
     name: 'Catapult Airways',
     baseUrl: 'catapult_airways',
-    summary: 'Game made for Global Game Jam 2019',
+    summary: 'Game for Global Game Jam 2019',
   },
   {
     name: 'You.Are.Transmission',
     baseUrl: 'you_are_transmission',
-    summary: 'Game made for Global Game Jam 2018',
+    summary: 'Game for Global Game Jam 2018',
   },
   {
     name: 'Pixel Brush',
@@ -29,22 +29,22 @@ let projects = [
   {
     name: 'Submarine Game',
     baseUrl: 'submarine_game',
-    summary: 'Game made for Global Game Jam 2017',
+    summary: 'Game for Global Game Jam 2017',
   },
   {
     name: 'YouTube internship',
     baseUrl: 'google_internship_2',
-    summary: 'Fan engagement in YouTube Community',
+    summary: 'Fan engagement in Community',
   },
   {
     name: 'Rhythm Heaven VR',
     baseUrl: 'rhythm_heaven_vr',
-    summary: 'Rhythm game made for Google Cardboard',
+    summary: 'Virtual reality music game',
   },
   {
     name: 'Raise The Sun',
     baseUrl: 'raise_the_sun',
-    summary: 'Game made for Global Game Jam 2016',
+    summary: 'Game for Global Game Jam 2016',
   },
   {
     name: 'Google internship',
@@ -54,7 +54,7 @@ let projects = [
   {
     name: 'Scene reconstruction',
     baseUrl: 'scene_reconstruction',
-    summary: 'Stereo video based SLAM (KinectFusion)',
+    summary: 'Stereo video SLAM (KinectFusion)',
   },
   {
     name: 'Graphical',
@@ -64,7 +64,7 @@ let projects = [
   {
     name: 'Math \'n Splat',
     baseUrl: 'math_n_splat',
-    summary: 'Educational game for primary school kids',
+    summary: 'Educational game for kids',
   },
   {
     name: 'Quack \'n Splat',

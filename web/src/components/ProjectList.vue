@@ -35,8 +35,8 @@ export default {
   width: 20rem;
   margin-left: 0.6rem;
   margin-right: 0.6rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .card-img {

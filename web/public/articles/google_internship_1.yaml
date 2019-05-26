@@ -5,15 +5,15 @@ links:
 article: |
   My first internship was at Google's main campus in California, and my project was to port the SDL2 library to Google’s Mojo IPC system.
   
-  SDL is an open source library which provides a layer of abstraction for developers to access multimedia hardware (displays, input devices, audio devices, etc). It's often used to create crossplatform video games. 
+  [SDL](https://en.wikipedia.org/wiki/Simple_DirectMedia_Layer) is an open source library which provides a layer of abstraction for developers to access multimedia hardware (displays, input devices, audio devices, etc). It's often used to create crossplatform video games. 
   
-  Mojo is the system for inter-process communication (IPC) developed for Chromimum. The development team I was working in was developing the Fuchsia operating system, of which Mojo is a major component. And so the goal of my project was to see how well graphics intensive applications perfromed on top of Mojo.
+  [Mojo](https://chromium.googlesource.com/chromium/src/+/master/mojo/README.md) is the system for inter-process communication (IPC) developed for Chromimum. The development team I was working in was developing the Fuchsia operating system, of which Mojo is a major component. The goal of my project was to see how well graphics intensive applications performed on top of Mojo.
 
-  The project took place over my three month internship. The first few weeks after onboarding were focused on understanding Mojo by reading the documentation and writing a simple Mojo application. The next seven or so weeks were spent getting the video, input and threading subsystems of SDL up and running. 
+  The project took place over my three month internship. After onboarding, the first few weeks were focused on understanding Mojo by reading the documentation and writing a simple Mojo application. The next seven or so weeks were spent getting the video, input and threading subsystems of SDL up and running. 
   
   [Screenshot of the spinning cube OpenGL EL sample]
   
-  After those subsystems were working we wanted to run a game on Mojo. We wound up choosing RB Doom 3 BFG. To get the game running we had to hack in implementations for a few missing OpenGL methods in our OpenGL implementation [ANGLE](https://en.wikipedia.org/wiki/ANGLE_(software) (another piece of software that came out of Chromium). I worked with ANGLE for the final two weeks of my project with my intern host and another graphics engineer on the team.
+  After those subsystems were working we wanted to run a game on Mojo. We wound up choosing [RB Doom 3 BFG](https://github.com/RobertBeckebans/RBDOOM-3-BFG). To get the game running we had to hack in implementations for a few missing OpenGL methods in our OpenGL implementation [ANGLE](https://github.com/google/angle) (another piece of software that came out of Chromium). I worked with ANGLE for the final two weeks of my project with my intern host and another graphics engineer on the team.
 
   [Screenshot of Doom 3]
 

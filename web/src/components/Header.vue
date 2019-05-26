@@ -16,11 +16,12 @@ var Header = {
 </div>
 </template>
 
-<style>
+<style scoped>
 .header{
   background-color: #FAFAFA;
   border-bottom: 1px solid #E0E0E0;
-  padding-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   text-align: center;
 }
 </style>

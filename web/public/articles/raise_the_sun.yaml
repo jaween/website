@@ -1,0 +1,24 @@
+date: 29/01/2016
+links:
+  - text: Website
+    url: https://globalgamejam.org/2016/games/raise-sun
+  - text: Source code
+    url: https://github.com/jaween/ggjplayerone
+article: |
+  Raise the Sun is a short single-player experience created over a weekend as part of the Global Game Jam 2016. The theme was ‘Ritual’.
+
+  The player must explore in the dark with a candle to perform the ritual of alighting sconces around an ancient structure.
+
+  The team over scoped the game during the initial design phase and consequently had to cut features during the 48 hour development period. The resulting game has a nice atmosphere, but it is very short.
+
+  I worked on various bits and pieces throughout the game, including most of the in-game cutscenes and general logic around the lighting of the wall sconces.
+
+  Team credits:
+
+  * Kathy Smart (Game design)
+  * Jaween Ediriweera (Programming)
+  * Graeme Kennelly (Programming and voice acting)
+  * Karnung Liang (Programming)
+  * Alison Kinlough (Art)
+  * Gee (Art)
+  * James Rogers (Art and voice acting)

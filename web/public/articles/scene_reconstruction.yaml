@@ -1,0 +1,8 @@
+date: March 2015 to June 2015
+links:
+  - text: Source code
+    url: https://github.com/jaween/scene-reconstruction
+article: |
+  This is a partial system for reconstructing a 3D model of an evironment from stereo video captured from a pair of RGB cameras. It specifically avoids the use of an infrared depth camera. The code was hardware accelerated using OpenCL and followed the outline presented in the [KinectFusion](https://www.microsoft.com/en-us/research/project/kinectfusion-project-page/) paper.
+
+  This project was a primarily self-directed as part of my undergraduate research course ‘Advanced Topics in Computer Science’, with Professor Ian Reid providing additional guidance throughout.

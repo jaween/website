@@ -1,26 +1,33 @@
 <template>
-  <div>
-    <h1>{{project.name}}</h1>
-    <vue-simple-markdown
-      v-if="data.article != null"
-      :highlight="true"
-      :source="data.article"
-      class="col-lg-8 col-xl-7 text-justify" 
-    />
-    <p v-if="error != null">{{error}}</p>
-    <div v-if="data.article == null && error == null" class="loader"/>
-    <div
-      v-if="data.links != null"
-      class="text-justify"
-    >
-      <p>Links:
-      <div
-        v-for="item in data.links"
-        v-bind:key="item.text"
-      >
-        <a :href="item.url">{{item.text}}</a>
+  <div class="project">
+    <b-row>
+      <div class="col-lg-2"/>
+      <b-col >
+        <h3 class="title">{{project.name}}</h3>
+        <b>{{data.date}}</b>
+        <vue-simple-markdown
+          v-if="data.article != null"
+          :highlight="true"
+          :source="data.article"
+          class="text-left" 
+        />
+        <p v-if="error != null">{{error}}</p>
+        <div v-if="data.article == null && error == null" class="loader"/>
+        <div
+          v-if="data.links != null"
+          class="text-justify"
+        >
+          <b>Links</b>
+          <div
+            v-for="item in data.links"
+            v-bind:key="item.text"
+          >
+            <a :href="item.url">{{item.text}}</a>
+            </div>
         </div>
-    </div>
+      </b-col>
+      <div class="col-lg-2"/>
+    </b-row>
   </div>
 </template>
 
@@ -65,6 +72,22 @@ export default {
 </script>
 
 <style scoped>
+.project {
+  margin-top: 1.2rem;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.vue-simple-markdown {
+  
+}
+
+.markdown-body {
+  margin-top: 0; 
+}
+
 .loader {
   border: 16px solid #f3f3f3; /* Light grey */
   border-top: 16px solid #3498db; /* Blue */

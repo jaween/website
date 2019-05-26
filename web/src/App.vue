@@ -1,8 +1,8 @@
 <template>
   <div id="app">
+    <Header/>
     <div class="container">
       <div class="column">
-        <Header/>
       </div>
       <div class="column">
         <router-view/>
@@ -23,11 +23,8 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

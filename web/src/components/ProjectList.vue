@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="project-list">
     <div
       v-for="project in projects"
       v-bind:key="project.baseUrl"
@@ -10,7 +10,6 @@
           :sub-title="project.summary"
           :img-src="project.thumbnail"
           tag="article"
-          class="mb-4 h-100"
         />
       </router-link>
     </div>
@@ -24,18 +23,22 @@ export default {
 </script>
 
 <style>
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .card {
   float: left;
-  min-width: 15rem;
-  max-width: 22rem;
-  min-height: 20rem;
-  max-height: 20rem;
-  width: 25rem;
+  text-align: center;
+  width: 20rem;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .card-img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
 }
 </style>

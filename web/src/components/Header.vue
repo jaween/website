@@ -1,22 +1,27 @@
 var Header = {
-  <template>
-    <div class="navigation">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <b-row>
-          <b-col>
-            <router-link :to="{ path: '/' }">
-              <a class="display-4">Jaween Ediriweera's website</a>
-            </router-link>
-          </b-col>
-        </b-row>
-        <b-row>
-          <b-col>I am a Software Developer from Australia.</b-col>
-        </b-row>
-        <b-row>
-          <b-col>This is an exhibit of some projects that I have worked on</b-col>
-        </b-row>
-      </nav>
+<template>
+<div class="header">
+  <div class="container-fluid">
+    <router-link :to="{ path: '/' }">
+      <h4>Jaween Ediriweera</h4>
+    </router-link>
+    <div>
+      <p>
+        Software Developer from Australia.
+        <br/>
+        This is an exhibit of some of my projects.
+      </p>
     </div>
-  </template>
-  
+  </div>
+</div>
+</template>
+
+<style>
+.header{
+  background-color: #FAFAFA;
+  border-bottom: 1px solid #E0E0E0;
+  padding-top: 1rem;
+  text-align: center;
+}
+</style>
 }

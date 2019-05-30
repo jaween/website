@@ -1,0 +1,16 @@
+date: July 2012 to June 2013
+links:
+  - text: Google Play download
+    url: https://play.google.com/store/apps/details?id=com.ween.graphical
+article: |
+  Graphical is a simple graphing calculator app.
+
+  I developed Graphical during my final year of high school and my first year of university. I designed and developed it to learn app development, and as a reaction to [overpriced graphing calculators](https://en.wikipedia.org/wiki/Casio_9860_series) needed at school.
+
+  The app includes a maths parser, evaluator, grapher, value-tracer and a dedicated maths keyboard. I implemented numerical integration, but never got around to fully implementing the user interface design.
+
+  I spent an excessive amount of time on the graph interaction. Each axis scales independently with multi-touch, and the axis labels anchor nicely to the edges of the screen.
+
+  [Animation of axis labels anchoring nicely]
+
+  Meanwhile, as a first year computer science student at university I was learning about fundamental engineering concepts like encapsulation and abstraction. I ended up reworking the whole app a few times because of this.

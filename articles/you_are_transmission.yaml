@@ -1,0 +1,23 @@
+date: 26-01-2018
+screenshots:
+links:
+  - text: Website
+    url: https://globalgamejam.org/2018/games/you-are-transmission
+  - text: Download
+    url: https://ggj.s3.amazonaws.com/games/2018/01/127398/exec/You.%20Are.%20Transmission..zip
+  - text: Source code
+    url: https://github.com/arknano/ggj2018
+article: |
+  Developed in Unity over 48 hours as part of the 2018 Global Game Jam. The theme of the jam was 'Transmission', which influenced the game's main movement mechanic. The player has the ability to transmit/teleport, which must be used to destroy enemies by travelling through them.
+
+  My main contribution was developing the enemy AI system. It uses Unity's Navigation Mesh features for path finding, with a simple set of movement tactics built on top (flee, advance, strafe, scout, etc.).
+
+  I also developed the enemy weapon system, which supports hitscan and projectile weapons. Weapons were created as Unity Scriptable Objects, which gave the designers freedom to create new weapons and tweak them as they saw fit.
+
+  The game was developed by team 'Shak Attack':
+
+  * [Morgan Davies](https://captainmorgandavies.com/) (Level design)
+  * [Jaween Ediriweera](http://jaween.com) (Programming)
+  * [Sean Mansell](http://arknano.net/) (Design & Programming)
+  * [Shakur Muller](https://shakurmuller.artstation.com/) (Art & Houdini Genie)
+  * [Dan Palamountain](https://dannypalamountain.wixsite.com/dpalamountain) (Level design)
